@@ -5,7 +5,7 @@ body {
 
 .Main-Article {
     background: white;
-    max-width:800px;
+    max-width:600px;
     border-radius: 16px;
     margin: 30px auto;
     padding: 30px;
@@ -55,6 +55,7 @@ body {
     color: rgba(39, 33, 66, 0.4);
     line-height: 24px;
     font-weight: 500;
+
   }
 
   .weather-temp{
@@ -63,23 +64,23 @@ body {
   }
   .weather-temp-value{
     font-size: 88px;
-    font-size: bold;
+    font-weight: bold;
     margin-left: 10px;
-
-
+    line-height: 88px;
   }
   .Temp-icon{
-    font-size: 44px;
-    margin-top: 22px;
+    width: 88px;
+    height: 88px;
+
 
   }
 
 .weather-temp-unit{
     font-size: 28px;
-    margin-top: 16px;
+    margin-top: 6px;
 }
 .weather-details strong {
-    colour: #f65282;
+    color: #f65282;
 }
   footer {
     border-top: 1px solid #f9f7fe;
