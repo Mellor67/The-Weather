@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>My Weather</title>
 </head>
 <body>
+    <div class="Main-Article">
    <header>
     <form>
-        <input type="search" placeholder="Find your city!" required>
-        <input type="submit" value="search"/>
-    <h1>Hello World!
-    </h1>
+        <input class="search" type="search" placeholder="Find your city!" required>
+        <input class="search-button" type="submit" value="search"/>
+    </form>
+   </header>
     <main>
-        <p>
-            Tempreture 14 degrees 
-            Humidity 15 
-        </p>
+      <div class="data">
+            <div>
+            <h1 class="weather-city">London</h1>
+            <p class="weather-details">
+                    Wednesday 14:69, Scattered Clouds 
+                    <br />
+                    Humidity: <strong>66%</strong>, Wind: <Strong>44 mph</Strong>
+            </p>
+            </div>
+            <div class="weather-temp">
+                <div class="Temp-icon"> ⛅ </div> 
+                <div class="weather-temp-value"> 12 </div> 
+                <div class="weather-temp-unit">°C</div>
+            </div>
+        
+        </div>
     </main>
 
-    <footer>Coded by 
-        <a href="https://github.com/Mellor67" target="_blank">
-            Charlotte Mellor  
-        </a></footer> Hosted by <a href="https://app.netlify.com/start/repos" target="_blank">Github</a> and website<a href="https://app.netlify.com/start/repos" target="_blank"> hosted on Netlify</a>
-</body>
+
+    <footer> Coded by <a href="https://github.com/Mellor67" target="_blank">Charlotte Mellor  </a> Hosted by <a href="https://app.netlify.com/start/repos" target="_blank">Github</a> and website<a href="https://app.netlify.com/start/repos" target="_blank"> hosted on Netlify</a></footer>
+    </div>
+    </body>
 </html>
