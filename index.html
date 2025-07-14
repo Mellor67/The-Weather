@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,28 +17,33 @@
     <div class="Main-Article">
    <header>
     <form class="search-form" id="search-form">
-        <input id="search-input" class="search" type="search" placeholder="Find your city!" required>
+        <input 
+        id="search-form-input" 
+        class="search" 
+        type="search" 
+        placeholder="Find your city!" 
+        required>
         <input class="search-button" type="submit" value="search"/>
     </form>
    </header>
     <main>
       <div class="data">
             <div>
-            <h1 class="weather-city" id="current-city"></h1>
+            <h1 class="weather-city" id="city"></h1>
             <p class="weather-details">
                     <span id="time"></span>, <span id="description"></span>
                     <br />
-                    Humidity: <strong><span id="hum">66%</span></strong>, Wind: <Strong><span id="wind">44</span> mph</Strong>
+                    Humidity: <strong  id="hum">66%</strong>, Wind: <Strong id="wind"></Strong>
             </p>
             </div>
             <div class="weather-temp">
                 <div class="Temp-icon" id="icon"></div> 
-                <div class="weather-temp-value" id="weather-temp-value"> 12 </div> 
+                <div class="weather-temp-value" id="temperature"> </div> 
                 <div class="weather-temp-unit">°C</div>
             </div>
         
         </div>
-      <div class="weather-forecast" id="cast"></div>
+      <div class="weather-forecast" id="forecast"></div>
     </main>
 
 
