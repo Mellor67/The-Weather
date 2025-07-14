@@ -16,7 +16,7 @@
 <body>
     <div class="Main-Article">
    <header>
-    <form id="search-form">
+    <form class="search-form" id="search-form">
         <input id="search-input" class="search" type="search" placeholder="Find your city!" required>
         <input class="search-button" type="submit" value="search"/>
     </form>
@@ -24,9 +24,9 @@
     <main>
       <div class="data">
             <div>
-            <h1 class="weather-city" id="current-city">London</h1>
+            <h1 class="weather-city" id="current-city"></h1>
             <p class="weather-details">
-                    <span id="current-date">Wednesday 14:69</span>, <span id="description">Scattered Clouds</span>
+                    <span id="time"></span>, <span id="description"></span>
                     <br />
                     Humidity: <strong><span id="hum">66%</span></strong>, Wind: <Strong><span id="wind">44</span> mph</Strong>
             </p>
@@ -38,6 +38,7 @@
             </div>
         
         </div>
+      <div class="weather-forecast" id="cast"></div>
     </main>
 
 
